@@ -188,7 +188,86 @@ console.log(result);
 console.log(ninjas);
 
 
-let age1;
+let age1 = null;
 
 console.log(age1, age1+3,`the age is ${age1}`);
 
+
+
+
+
+
+// booleans
+
+// methods can return booleans
+result = email.includes('@');
+console.log(result);
+
+result = email.includes('!');
+console.log(result);
+
+let names = ['mario','luigi','toad']
+
+result = names.includes('luigi');
+console.log(result);
+
+
+// comparison operators
+age = 25;
+console.log(age == 25);
+console.log(age == 30);
+console.log(age != 30);
+console.log(age > 20);
+console.log(age < 20);
+console.log(age <= 25); 
+
+let name = 'shaun';
+console.log(name == 'shaun');
+console.log(name == 'Shaun');
+console.log(name > 'crystal');
+console.log(name > 'Shaun');
+
+
+
+
+// loose comparison (different types can still be equal)
+console.log('===========');
+console.log(age == 25); // true
+console.log(age == '25'); // true
+console.log(age != 25); // false
+console.log(age != '25'); // false
+
+// strict comparison (different types can NOT still be equal)
+console.log(age === 25); // true
+console.log(age === '25'); // false
+console.log(age !== 25); // false
+console.log(age !== '25'); // true
+
+
+
+
+
+
+
+
+// type conversion
+score = '100';
+console.log(score+1); // 1001
+
+score = Number(score);
+
+console.log(score+1); // 101
+
+console.log(typeof score); // number
+
+result = String(50);
+console.log(result, typeof result); // 50 string
+
+result = Boolean(true)
+console.log(result, typeof result); // true , 'boolean'
+
+result = Boolean('0')
+console.log(result, typeof result); // true , 'boolean'
+
+result = Boolean('')
+console.log(result, typeof result); // false , 'boolean'
